@@ -16,7 +16,8 @@ def random_line(possible_output):
 all_lines = open("songofsongs.txt", "r").read().splitlines()
 already_tweeted = open("tweeted.txt", "r").read().splitlines()
 possible_output = [item for item in all_lines if item not in already_tweeted]
-if possible_output.count == 0:
+print(possible_output)
+if len(possible_output) == 0:
     os.system("mv tweeted.txt tweeted.bak && touch tweeted.txt")
     possible_output = all_lines
 

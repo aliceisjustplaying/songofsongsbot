@@ -1,4 +1,4 @@
 secrets.txt
-tweeted.txt
+tweeted.*
 .env
 fix-commits.sh
